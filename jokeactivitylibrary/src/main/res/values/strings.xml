@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">JokeActivityLibrary</string>
+    <string name="action_settings">Settings</string>
+    <string name="library_welcome_text">Welcome Joke Library</string>
+    <string name="library_joke_text">Kock Knock</string>
+
+
+</resources>
