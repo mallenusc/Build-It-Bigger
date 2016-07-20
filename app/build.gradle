@@ -22,12 +22,10 @@ android {
         paid {
             applicationId "com.udacity.gradle.builditbigger.paid"
             buildConfigField 'boolean', 'PAID', 'true'
-            buildConfigField "int", "THING_ONE", "1"
         }
         free {
             applicationId "com.udacity.gradle.builditbigger.free"
             buildConfigField 'boolean', 'PAID', 'false'
-            buildConfigField "int", "THING_ONE", "0"
         }
     }
 }
@@ -37,8 +35,8 @@ dependencies {
     // Added for AdMob
     compile project(path: ':jokeactivitylibrary')
     compile 'com.android.support:appcompat-v7:23.0.0'
-    compile 'com.google.android.gms:play-services:9.0.2'
-    compile 'com.google.android.gms:play-services-ads:9.0.2'
-    compile 'com.google.android.gms:play-services-auth:9.0.2'
-    compile 'com.google.android.gms:play-services-gcm:9.0.2'
+    freeCompile 'com.google.android.gms:play-services:9.0.2'
+    freeCompile 'com.google.android.gms:play-services-ads:9.0.2'
+    freeCompile 'com.google.android.gms:play-services-auth:9.0.2'
+    freeCompile 'com.google.android.gms:play-services-gcm:9.0.2'
 }
